@@ -1,0 +1,620 @@
+interrupt
+mkdir -p log
+cp -rf ../testcases/interrupt.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:56:40 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:56:40 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l interrupt.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit interrupt.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l interrupt.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit interrupt.ucdb; log -r /*;run -all" 
+# Start time: 01:56:41 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit interrupt.ucdb
+#  log -r /*
+# run -all
+# INTERRUPT PASS
+# ** Note: $finish    : run_test.v(81)
+#    Time: 3249875 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:56:43 on Sep 03,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+cp interrupt.log ./log
+mv interrupt.log sim.log
+reset
+mkdir -p log
+cp -rf ../testcases/reset.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:56:44 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:56:44 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l reset.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit reset.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l reset.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit reset.ucdb; log -r /*;run -all" 
+# Start time: 01:56:44 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit reset.ucdb
+#  log -r /*
+# run -all
+# RESET PASS
+# ** Note: $finish    : run_test.v(68)
+#    Time: 1225 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:56:45 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+cp reset.log ./log
+mv reset.log sim.log
+rw_access
+mkdir -p log
+cp -rf ../testcases/rw_access.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:56:45 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:56:45 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l rw_access.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit rw_access.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l rw_access.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit rw_access.ucdb; log -r /*;run -all" 
+# Start time: 01:56:46 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit rw_access.ucdb
+#  log -r /*
+# run -all
+# RW PASS
+# ** Note: $finish    : run_test.v(1333)
+#    Time: 46525 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:56:47 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+cp rw_access.log ./log
+mv rw_access.log sim.log
+1pass
+mkdir -p log
+cp -rf ../testcases/1pass.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:56:47 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:56:47 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l 1pass.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit 1pass.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l 1pass.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit 1pass.ucdb; log -r /*;run -all" 
+# Start time: 01:56:48 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit 1pass.ucdb
+#  log -r /*
+# run -all
+# 1Pass write: Pass
+# 1Pass interrupt: Pass
+# ** Note: $finish    : run_test.v(44)
+#    Time: 14825 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:56:49 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+cp 1pass.log ./log
+mv 1pass.log sim.log
+count
+mkdir -p log
+cp -rf ../testcases/count.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:56:49 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:56:49 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l count.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit count.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l count.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit count.ucdb; log -r /*;run -all" 
+# Start time: 01:56:50 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit count.ucdb
+#  log -r /*
+# run -all
+# COUNT PASS
+# ** Note: $finish    : run_test.v(99)
+#    Time: 7027325 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:56:54 on Sep 03,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+cp count.log ./log
+mv count.log sim.log
+count_ctr
+mkdir -p log
+cp -rf ../testcases/count_ctr.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:56:55 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:56:55 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l count_ctr.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit count_ctr.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l count_ctr.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit count_ctr.ucdb; log -r /*;run -all" 
+# Start time: 01:56:56 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit count_ctr.ucdb
+#  log -r /*
+# run -all
+# COUNT CONTROL PASS
+# ** Note: $finish    : run_test.v(111)
+#    Time: 233575 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:56:56 on Sep 03,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+cp count_ctr.log ./log
+mv count_ctr.log sim.log
+APB_slave
+mkdir -p log
+cp -rf ../testcases/APB_slave.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:56:57 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:56:57 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l APB_slave.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit APB_slave.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l APB_slave.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit APB_slave.ucdb; log -r /*;run -all" 
+# Start time: 01:56:57 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit APB_slave.ucdb
+#  log -r /*
+# run -all
+# APB PASS
+# ** Note: $finish    : run_test.v(211)
+#    Time: 2875 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:56:59 on Sep 03,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+cp APB_slave.log ./log
+mv APB_slave.log sim.log
+TDR_reset
+mkdir -p log
+cp -rf ../testcases/TDR_reset.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:56:59 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:56:59 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l TDR_reset.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit TDR_reset.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l TDR_reset.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit TDR_reset.ucdb; log -r /*;run -all" 
+# Start time: 01:57:00 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit TDR_reset.ucdb
+#  log -r /*
+# run -all
+# TDR reset pass
+# ** Note: $finish    : run_test.v(18)
+#    Time: 8875 ns  Iteration: 0  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:57:01 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+cp TDR_reset.log ./log
+mv TDR_reset.log sim.log
+halt
+mkdir -p log
+cp -rf ../testcases/halt.v run_test.v
+vlib work
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+vmap work work
+Questa Intel Starter FPGA Edition-64 vmap 2024.3 Lib Mapping Utility 2024.09 Sep 10 2024
+vmap work work 
+Modifying modelsim.ini
+vlog +cover=bcesft -f compile.f
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 01:57:01 on Sep 03,2026
+vlog "+cover=bcesft" -f compile.f 
+-- Compiling module timer_top
+-- Compiling module APB_slave
+-- Compiling module counter
+-- Compiling module register
+-- Compiling module count_control
+-- Compiling module test_bench
+
+Top level modules:
+	test_bench
+End time: 01:57:01 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vsim -coverage -l halt.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit halt.ucdb; log -r /*;run -all"
+Reading pref.tcl
+
+# 2024.3
+
+# vsim -coverage -l halt.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit halt.ucdb; log -r /*;run -all" 
+# Start time: 01:57:02 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit halt.ucdb
+#  log -r /*
+# run -all
+# dbg_mode = 1
+# dbg_mode = 0
+# HALT PASS
+# ** Note: $finish    : run_test.v(169)
+#    Time: 100925 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 01:57:03 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+cp halt.log ./log
+mv halt.log sim.log
+mkdir -p coverage
+vcover merge IP.ucdb *.ucdb
+Questa Intel Starter FPGA Edition-64 vcover 2024.3 Coverage Utility 2024.09 Sep 10 2024
+Start time: 01:57:03 on Sep 03,2026
+vcover merge IP.ucdb 1pass.ucdb APB_slave.ucdb count_ctr.ucdb count.ucdb halt.ucdb interrupt.ucdb IP.ucdb reset.ucdb rw_access.ucdb TDR_reset.ucdb 
+Questa Intel Starter FPGA Edition-64 vcover 2024.3 Coverage Utility 2024.09 Sep 10 2024
+Merging file 1pass.ucdb
+Merging file APB_slave.ucdb
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file APB_slave.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Merging file count_ctr.ucdb
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file count_ctr.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Merging file count.ucdb
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file count.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Merging file halt.ucdb
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file halt.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Merging file interrupt.ucdb
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file interrupt.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Merging file IP.ucdb
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named '1pass' are from different simulations.
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named 'APB_slave' are from different simulations.
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named 'count_ctr' are from different simulations.
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named 'count' are from different simulations.
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named 'halt' are from different simulations.
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named 'interrupt' are from different simulations.
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file IP.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Merging file reset.ucdb
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named 'reset' are from different simulations.
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file reset.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Merging file rw_access.ucdb
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named 'rw_access' are from different simulations.
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file rw_access.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Merging file TDR_reset.ucdb
+** Error (suppressible): (vcover-6854) Multiple test data records with the same name encountered during the merge
+of file 'IP.ucdb'.
+These test data records contain conflicting data.
+For more information issue the command 'verror 6854'.
+Test data records named 'TDR_reset' are from different simulations.
+** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file TDR_reset.ucdb, skipping code coverage merge for design unit work.test_bench defined in file ../tb/test_bench.v, line 2
+Writing merged result to IP.ucdb
+
+End time: 01:57:03 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 9, Warnings: 9
+vcover report IP.ucdb -output coverage/summary_report.txt
+Questa Intel Starter FPGA Edition-64 vcover 2024.3 Coverage Utility 2024.09 Sep 10 2024
+Start time: 01:57:03 on Sep 03,2026
+vcover report IP.ucdb -output coverage/summary_report.txt 
+End time: 01:57:03 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+vcover report -zeros -details -code bcesft -annotate -All -codeAll IP.ucdb -output coverage/detail_report.txt
+Questa Intel Starter FPGA Edition-64 vcover 2024.3 Coverage Utility 2024.09 Sep 10 2024
+Start time: 01:57:03 on Sep 03,2026
+vcover report -zeros -details -code bcesft -annotate -All -codeAll IP.ucdb -output coverage/detail_report.txt 
+End time: 01:57:03 on Sep 03,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

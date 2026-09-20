@@ -1,0 +1,37 @@
+# vsim -debugDB -l test_a1_b1_c0.log -voptargs="+acc" -assertdebug -c test_bench -do "log -r /*;run -all;" 
+# Start time: 20:06:07 on Sep 09,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.test_bench(fast)
+# Loading work.top(fast)
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# log -r /*
+# run -all
+# ======================================
+# ====== Pat name: a1_b1_c0 ============
+# ======================================
+# ======================================
+# ============= TEST PASSED ============
+# ======================================
+# a=1, b=1, c=0, z=1
+# Test_result PASSED
+# ** Note: $finish    : ../tb/test_bench.v(43)
+#    Time: 201 ns  Iteration: 0  Instance: /test_bench
+# End time: 20:06:08 on Sep 09,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

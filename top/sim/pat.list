@@ -1,0 +1,9 @@
+interrupt
+reset
+rw_access
+1pass
+count
+count_ctr
+APB_slave
+TDR_reset
+halt

@@ -1,0 +1,138 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# coverage read -dataset IP IP.ucdb
+# IP.ucdb opened as coverage dataset "IP"
+coverage exclude -src ../rtl/count_control.v -line 39 -code s -comment {This statement is unreachable because the IP's error response prevent writitng invalid value to div_val}
+coverage exclude -src ../rtl/count_control.v -line 39 -code b -comment {this branch is unreachable due to the IP's error response}
+coverage exclude -du register -togglenode {TCR[2]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[3]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[4]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[5]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[6]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[7]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[12]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[13]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[14]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[15]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[16]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[17]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[18]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[19]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[20]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[21]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[22]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[23]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[24]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[25]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[26]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[27]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[28]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[29]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[30]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TCR[31]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[2]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[3]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[4]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[5]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[6]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[7]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[8]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[9]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[10]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[11]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[12]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[13]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[14]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[15]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[16]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[17]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[18]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[19]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[20]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[21]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[22]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[23]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[24]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[25]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[26]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[27]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[28]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[29]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[30]} -comment {reserved bits}
+coverage exclude -du register -togglenode {THCSR[31]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[1]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[2]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[3]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[4]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[5]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[6]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[7]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[8]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[9]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[10]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[11]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[12]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[13]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[14]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[15]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[16]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[17]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[18]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[19]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[20]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[21]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[22]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[23]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[24]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[25]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[26]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[27]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[28]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[29]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[30]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TIER[31]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[1]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[2]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[3]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[4]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[5]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[6]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[7]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[8]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[9]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[10]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[11]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[12]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[13]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[14]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[15]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[16]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[17]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[18]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[19]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[20]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[21]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[22]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[23]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[24]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[25]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[26]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[27]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[28]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[29]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[30]} -comment {reserved bits}
+coverage exclude -du register -togglenode {TISR[31]} -comment {reserved bits}
+coverage save -assert -directive -cvg -codeAll IP_cov_excluded.ucdb
+coverage report -excluded -output /ictc/student_data/quangthong_0806/final_project/top/sim/exclusion.do -user -pragma

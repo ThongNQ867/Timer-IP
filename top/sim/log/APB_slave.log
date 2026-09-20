@@ -1,0 +1,27 @@
+# vsim -coverage -l APB_slave.log -c test_bench -voptargs="+cover=bcesft" -assertdebug -do "coverage save -onexit APB_slave.ucdb; log -r /*;run -all" 
+# Start time: 02:36:27 on Sep 03,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading work.test_bench(fast)
+# coverage save -onexit APB_slave.ucdb
+#  log -r /*
+# run -all
+# APB PASS
+# ** Note: $finish    : run_test.v(211)
+#    Time: 2875 ns  Iteration: 1  Instance: /test_bench
+# Saving coverage database on exit...
+# End time: 02:36:28 on Sep 03,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

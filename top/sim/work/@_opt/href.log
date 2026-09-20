@@ -1,0 +1,4 @@
+BEGIN 1:register:fast:work
+    TDR0 :  1:test_bench:fast:work
+    THCSR :  1:test_bench:fast:work
+END 
